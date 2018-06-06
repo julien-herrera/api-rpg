@@ -1,6 +1,8 @@
 language: php
 php:
   - '7.1.3'
+install: composer install
+script: skip
 deploy:
   provider: heroku
   api_key:
