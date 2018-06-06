@@ -8,6 +8,7 @@ deploy:
   api_key:
     secure: "f89e0a18-d184-4790-91f5-8c4b549824ce"
   app: api-rpg
+  on: develop
 notifications:
   email:
     - herrera.julien@gmail.com
