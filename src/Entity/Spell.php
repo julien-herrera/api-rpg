@@ -70,6 +70,14 @@ class Spell
     public $source;
 
     /**
+     * @var string $components Composantes.
+     *
+     * @ORM\Column(type="string")
+     * @Assert\NotBlank
+     */
+    public $components;
+
+    /**
      * @var bool $isReversible Description.
      *
      * @ORM\Column(type="boolean")
