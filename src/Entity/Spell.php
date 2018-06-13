@@ -48,7 +48,7 @@ class Spell
     /**
      * @var string $schools Schools.
      *
-     * @ORM\ManyToMany(targetEntity="School")
+     * @ORM\ManyToOne(targetEntity="School")
      * @ORM\JoinColumn(name="school_id", referencedColumnName="id")
      */
     public $schools;
@@ -56,7 +56,7 @@ class Spell
     /**
      * @var string $spheres Spheres.
      *
-     * @ORM\ManyToMany(targetEntity="Sphere")
+     * @ORM\ManyToOne(targetEntity="Sphere")
      * @ORM\JoinColumn(name="sphere_id", referencedColumnName="id")
      */
     public $spheres;
